@@ -1,0 +1,84 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="ListView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:footerDividersEnabled">false</item>
+        <item name="android:headerDividersEnabled">false</item>
+        <item name="android:cacheColorHint">#FF000000</item>
+    </style>
+
+    <style name="NetworkTipsTextView">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">15dip</item>
+        <item name="android:layout_marginRight">15dip</item>
+        <item name="android:background">@drawable/bg_net_work_tips</item>
+        <item name="android:drawableLeft">@drawable/ic_warning</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingTop">5dip</item>
+        <item name="android:paddingBottom">5dip</item>
+        <item name="android:paddingLeft">15dip</item>
+        <item name="android:text">@string/noWifiWarning</item>
+        <item name="android:textColor">#ff0000</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <!-- list item padding style -->
+    <style name="ListItem" parent="MatchSize">
+        <item name="android:paddingTop">@dimen/ListItemPaddingTop</item>
+        <item name="android:paddingBottom">@dimen/ListItemPaddingBottom</item>
+    </style>
+
+    <style name="ListItem.Padding">
+        <item name="android:paddingLeft">@dimen/ListItemPaddingLeft</item>
+        <item name="android:paddingRight">@dimen/ListItemPaddingRight</item>
+    </style>
+
+    <style name="MatchSize">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+    </style>
+
+    <style name="AppCheckBox" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/sel_app_check</item>
+        <item name="android:layout_width">20dip</item>
+        <item name="android:layout_height">20dip</item>
+    </style>
+
+    <style name="RecommendBtn" parent="MatchSize">
+        <item name="android:background">@drawable/shape_white_conner_stroke</item>
+        <item name="android:textColor">#52b5ff</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="RecommendBtn.Orange" parent="MatchSize">
+        <item name="android:background">@drawable/shape_rectangle_orange</item>
+        <item name="android:textColor">#fff</item>
+        <item name="android:gravity">center</item>
+    </style>
+	
+    <style name="SwitchTabStyle">
+        <item name="android:layout_width">0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+</resources>

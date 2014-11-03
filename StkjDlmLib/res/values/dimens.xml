@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	
+    <!-- activity dimens-->
+    <dimen name="activityPaddingLeft">7dip</dimen>
+    <dimen name="activityPaddingRight">7dip</dimen>
+    <dimen name="activityPaddingTop">7dip</dimen>
+    <dimen name="activityPaddingBottom">7dip</dimen>
+	
+    <!-- icon dimens -->
+    <dimen name="stdWidth">48dip</dimen>
+    <dimen name="stdHeight">48dip</dimen>
+    
+    <!-- 按钮dimens -->
+    <dimen name="BtnWidth">70dip</dimen>
+    <dimen name="BtnHeight">48dip</dimen>
+    
+    <!-- list padding -->
+    <dimen name="ListItemPaddingTop">5dip</dimen>
+    <dimen name="ListItemPaddingBottom">5dip</dimen>
+    <dimen name="ListItemPaddingRight">12dip</dimen>
+    <dimen name="ListItemPaddingLeft">12dip</dimen>
+    
+    
+    <!-- sliding menu dimens -->
+    <dimen name="SlidingMenuShadowWith">5dip</dimen>
+    <dimen name="SlidingMenuBehindOffset">10dip</dimen>
+    
+    <!-- pager indicator -->
+    <dimen name="PagerIndicatorHeight">3dip</dimen>
+    <dimen name="PagerIndicatorTabHeight">48dip</dimen>
+    <dimen name="PagerTabPadding">20dip</dimen>
+    <dimen name="PagerTabUnderlineHeight">1dip</dimen>
+</resources>

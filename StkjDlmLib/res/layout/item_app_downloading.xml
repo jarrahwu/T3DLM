@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/downloadingItemContainer"
+    style="@style/ListItem.Padding" >
+
+    <FrameLayout
+        android:id="@+id/appBox"
+        android:layout_width="60dip"
+        android:layout_height="60dip"
+        android:layout_centerVertical="true" >
+
+        <com.android.volley.toolbox.NetworkImageView
+            android:id="@+id/appIcon"
+            android:layout_width="48dip"
+            android:layout_height="48dip"
+            android:layout_gravity="center_horizontal"
+            android:contentDescription="@string/app_name"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_launcher" />
+    </FrameLayout>
+
+    <com.stkj.dlm.TextProgressBar
+        android:id="@+id/progressDownload"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="15dip"
+        android:layout_alignLeft="@+id/appName"
+        android:layout_below="@+id/appName"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="10dip"
+        android:layout_toLeftOf="@+id/funcBox"
+        android:layout_toRightOf="@+id/appBox"
+        android:max="100"
+        android:progressDrawable="@drawable/green_progress_drawable" />
+
+    <TextView
+        android:id="@+id/appName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/appBox"
+        android:layout_marginLeft="10dip"
+        android:layout_toRightOf="@+id/appBox"
+        android:ellipsize="middle"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="appName"
+        android:textColor="#444444" />
+
+    <TextView
+        android:id="@+id/appSize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/progressDownload"
+        android:layout_below="@+id/progressDownload"
+        android:layout_marginTop="3dip"
+        android:ellipsize="middle"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="5MB"
+        android:textColor="#676772" />
+
+    <FrameLayout
+        android:id="@+id/funcBox"
+        android:layout_width="60dip"
+        android:layout_height="30dip"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="10dip" >
+
+        <Button
+            android:id="@+id/btnInstall"
+            style="@style/RecommendBtn.Orange"
+            android:text="安装"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btnOpen"
+            style="@style/RecommendBtn.Orange"
+            android:text="打开"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btnContinue"
+            style="@style/RecommendBtn.Orange"
+            android:text="继续" />
+
+        <Button
+            android:id="@+id/btnRetry"
+            style="@style/RecommendBtn.Orange"
+            android:text="重试"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btnPause"
+            style="@style/RecommendBtn.Orange"
+            android:text="暂停"
+            android:visibility="gone" />
+    </FrameLayout>
+
+</RelativeLayout>
